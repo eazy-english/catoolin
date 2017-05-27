@@ -8,6 +8,7 @@
 	<meta charset="UTF-8">
 	<title>Vue JS</title>
 	<?php $con->connect("vue-js"); ?>
+	<?php $con->link("bootstrap"); ?>
 </head>
 <body>
 	<div id="app">
