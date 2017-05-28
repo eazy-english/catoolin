@@ -16,7 +16,7 @@ class video_parser_api {
     //  \__, |  \___/   \__,_|  \__|  \__,_| |_.__/   \___|   | .__/   \__,_| |_|    |___/  \___| |_|   
     //   __/ |                                                | |                                       
     //  |___/                                                 |_|                                                                               
-    // creted ostap34PHP 
+    //Created by Ostap34PHP
     public function get_youtube_video_id($url)
     {
         $youtube_video_id = str_replace("https://www.youtube.com/watch?v=", "", $url);
