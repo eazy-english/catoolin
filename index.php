@@ -29,6 +29,6 @@
 			}
 		})
 	</script>
-	<?php $pin->showBoard("AbPzIs8q8NfsTRYy18_4KInxXsKpFMMXy4ctdwhDu75aMaA_jQAAAAA"); ?>
+	<?php $pin->showBoard(); ?>
 </body>
 </html>
