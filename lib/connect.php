@@ -48,6 +48,12 @@
   						echo '<script src="//cdn.muicss.com/mui-0.9.16/js/mui.min.js"></script>';
   						echo "\n";
 						break;
+					# Connecting Less JS
+					case "less-js":
+  						echo '<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>';
+  						echo "\n";
+						break;
+
 					default:
 						return "";
 						break;

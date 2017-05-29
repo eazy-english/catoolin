@@ -1,6 +1,8 @@
 <?php 
 	require_once "lib/connect.php";
+	require_once "lib/api/pinterest.php";
 	$con = new Connect();
+	$pin = new PinterestAPI();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,5 +29,6 @@
 			}
 		})
 	</script>
+	<?php $pin->showBoard("AbPzIs8q8NfsTRYy18_4KInxXsKpFMMXy4ctdwhDu75aMaA_jQAAAAA"); ?>
 </body>
 </html>
