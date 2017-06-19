@@ -30,7 +30,7 @@
 					# Connecting Video JS
   					case "video-js":
   						echo '<script src="https://vjs.zencdn.net/5.19.2/video.js"></script>
-  							<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>';
+  							<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>';
   						echo "\n";
 						break;
 					# Connecting Angular JS
@@ -68,7 +68,7 @@
 						break;
 					# Connecting Video JS stylesheet file
 					case "video-js":
-						echo '<link href="http://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">';
+						echo '<link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">';
 						echo "\n";
 						break;
 					# Connecting Material UI
