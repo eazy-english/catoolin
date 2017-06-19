@@ -11,6 +11,7 @@
 	<title>Vue JS</title>
 	<?php $con->connect("vue-js"); ?>
 	<?php $con->link("bootstrap"); ?>
+	<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </head>
 <body>
 	<div id="app">
@@ -29,6 +30,7 @@
 			}
 		})
 	</script>
-	<?php $pin->showBoard(); ?>
+	<?php $pin->showBoard("ACCESS TOKEN"); ?>
+	<?php $pin->showPin("BOARD ID", "ACCESS TOKEN"); ?>
 </body>
 </html>
