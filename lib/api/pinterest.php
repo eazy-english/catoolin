@@ -1,5 +1,4 @@
 <?php
-
 	/* PinterestAPI class, by Mr CaT for working with Pinterest API
 	Created just for working with Pinterest API, u won't do math
 	Copyright (c) 2017 by Mr CaT */
