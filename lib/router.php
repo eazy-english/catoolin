@@ -1,12 +1,13 @@
 <?php
 
-	#####	#####	#	#	#####  ###	## 	  #	##### 			##	  ##
-	#	 #	#	#	#	#	  #		#	# #   #	#				##	  ##
-	#####	#	#	#	#	  #		#	#  #  #	#  ##		
-	#	 #	#	#	#	#	  #		#	#   # #	#	#		 #			   #	
-	#	 #	#####	 ###	  #	   ###	#	 ##	#####		  #			  #
-															   #		 #
-	/* Router class by Mr CaT ) ) )								#########
+	/*	                   __            
+	  ____ ___  __ __ / /_ ___   ____
+	 / __// _ \/ // // __// -_) / __/
+	/_/   \___/\_,_/ \__/ \__/ /_/   
+                                 
+                                 */
+
+	/* Router class by Mr CaT ) ) )
 
 	Created in easy form, for easy understanding
 
@@ -31,7 +32,11 @@
 				
 				# Our controller name will depend on routes, string after the address
 
-				@$controllername = $route[1];
+				$controllername = "";
+
+				if(isset($route[1])) $controllername = $route[1];
+
+				else echo "";
 
 				$controllername = $controllername . "Controller";
 				
@@ -41,8 +46,11 @@
 
 				# Our methods 'll  be 'method' and method name
 
-				@$methodname = $route[2];
+				$methodname = "";
 
+				if(isset($route[2])) $methodname = $route[2];
+
+				else echo "";
 				$methodname = "method" . $methodname;
 
 				# Each model file must have the model object name, but with lil' letters
