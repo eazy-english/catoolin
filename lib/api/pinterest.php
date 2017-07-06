@@ -11,13 +11,25 @@
 	class PinterestAPI {
 
 
-		# Data array , for creating boards, pins
-
-		public $data = [];
-
 		# Access Token, with this u work with API
 
 		public $token;
+
+		# THE NAME of PIN or BOARD
+
+		public $name;
+
+		# The Description of our Pin or Board
+
+		public $description;
+
+		# Our note for pin
+
+		public $note;
+
+		# Our image to our pin
+
+		public $img_url;
 
 		# Board , in board, u carry pins
 
@@ -29,8 +41,16 @@
 
 			# Simple construct
 			public function __construct() {
+				# The NAME TO OUR Board or Pin
+				if(isset($name)) $this->name = $name;
+				# The Description of our BOARD or Pin
+				if(isset($description)) $this->description = $description;
 				# Our ACCESS TOKEN
 				if(isset($token)) $this->token = $token;
+				# Note ypur Pin
+				if(isset($note)) $this->note = $note;
+				# Image for our pin
+				if(isset($img_url)) $this->img_url = $img_url;
 				# Board ID for deleting boards, pins, actually for creating pins
 				if(isset($board_id)) $this->board_id = $board_id;
 				# Pin ID, for deleting pins
@@ -59,9 +79,9 @@
 			}
 
 			# Creating boards
-			public function createBoard($name, $desc, $token) {
+			public function createBoard($name, $description, $token) {
 				# Our "data" for creating boards
-				$data = ['name' => $name, 'description' => $desc];
+				$data = ['name' => $name, 'description' => $description];
 				# But now we encode it, that SERVER could understand what we had sent him
 				$encoded = json_encode($data);
 				# Init cURL session
