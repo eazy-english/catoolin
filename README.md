@@ -1,2 +1,2 @@
-# catoolin
-The MicroFramework , which had been created by 2 catz
+# CATOOLIN
+The MicroFramework , which had been created by catz

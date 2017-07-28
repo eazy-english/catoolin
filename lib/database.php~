@@ -56,12 +56,19 @@ class Database {
 		return $this->get("*", $table);
 	}
 
+	public function fetch($table) {
+	       if($this->getAll($table)) return $this->fetchAll();
+	}
 	public function getbyId($table) {
 		return $this->order_by("id", $table);
 	}
 
 	public function delete($column, $table) {
-		return $this->query("DELETE FROM $table");
+		return $this->query("DELETE FROM $table WHERE $column > 0");
+	}
+
+	public function deleteAll($table) {
+		return $this->delete("id", $table);
 	}
 
 }
