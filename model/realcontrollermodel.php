@@ -1,5 +1,10 @@
 <?php
 
+	require_once '../lib/multi.php';
+
+	$multi = Multi::getMulti();
+
+
 	class RealControllerModel {
 
 		private static $model;
