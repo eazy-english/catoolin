@@ -22,8 +22,16 @@
 				return md5(md5($this->password.$this->salt));
 			}
 
+           		 public function cat_start() {
+                		return session_start();
+           		 }
+
+            		public function cat_stop() {
+                		return session_destroy();
+           		 }
+
 			public function footer() {
 				echo "<b>Powered by</b> <i>CATOOLIN</i>";
 			}
 	}
-
+	
