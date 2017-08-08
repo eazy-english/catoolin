@@ -33,18 +33,18 @@ $connect->connect("vue-js"); # This will connect Vue JS, the JS Library
 $connect->link("bootstrap"); # This will connect Bootstrap, CSS Library
 ```
 *Here are JS Libraries*:
-`vue-js` -> Vue JS
-`jquery` -> JQuery
-`video-js` -> Video JS
-`angular-js` -> Angular JS
-`bootstrap` -> Bootstrap Library
-`mui` -> Material UI
-`less-js` -> LESS JS
+* `vue-js` -> Vue JS
+* `jquery` -> JQuery
+* `video-js` -> Video JS
+* `angular-js` -> Angular JS
+* `bootstrap` -> Bootstrap Library
+* `mui` -> Material UI
+* `less-js` -> LESS JS
 
 *And here are CSS Libraries*:
-`bootstrap` -> Bootstrap Library
-`video-js` -> Video JS
-`mui` -> Material UI
+* `bootstrap` -> Bootstrap Library
+* `video-js` -> Video JS
+* `mui` -> Material UI
 
 ## APIS?
 **With *CATOOLIN* you can also work with such APIs as *Pinterest*, *Youtube Video Parser*, but we try to add *APIs* of another services**
