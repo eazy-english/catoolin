@@ -21,7 +21,7 @@
 
 			# Our static method will be "cat"
 
-			public static function cat() {
+			public function cat() {
 				# Getting the url
 
 				$url = $_SERVER["REQUEST_URI"];
