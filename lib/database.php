@@ -39,8 +39,8 @@ class Database {
 	# Init PDO connect to DB via following var
 	private $pdo;
 
-	public function __construct($host, $user, $pass, $base, $charset) {
-		$this->connect($host, $user, $pass, $base, $charset);
+	public function __construct() {
+		$this->connect("YOUR_HOST", "YOUR_USER", "YOUR_PASSWORD", "YOUR_DB", "YOUR_DB_CHARSET");
 		if(isset($table)) $this->table = $table;
 	}
 
@@ -100,9 +100,9 @@ class Database {
 
 	# Take a look to Last Inserted Data's Id
 
-    	public function lastInsertId() {
-        	return $this->pdo->lastInsertId();
-    	}
+    public function lastInsertId() {
+        return $this->pdo->lastInsertId();
+    }
 
 	# Ordering by some column
 	
@@ -122,6 +122,12 @@ class Database {
 		return $this->get("*", $table);
 	}
 
+    # Get $column from $table with condition
+
+    public function get_where($column, $table, $where, $columns) {
+        return $this->query("SELECT $column FROM $table WHERE $where = $columns");
+    }
+
 	# Get all columns which are ordered by Id
 
 	public function getbyId($table) {
@@ -136,9 +142,9 @@ class Database {
 
 	# Delete all data from table
 
-    	public function deleteAll($table) {
-       		 return $this->query("TRUNCATE $table");
-    	}
+    public function deleteAll($table) {
+       	 return $this->query("TRUNCATE $table");
+    }
 
 	# Disable cloning...
 
