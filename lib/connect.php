@@ -23,8 +23,7 @@
 						break;
 					# Connecting JQuery
 					case "jquery":
-						echo '<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>';
+						echo '<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>';
   						echo "\n";
 						break;
 					# Connecting Video JS
@@ -53,6 +52,11 @@
   						echo '<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>';
   						echo "\n";
 						break;
+					# Connecting Vue Component MetroUI
+					case "metroui":
+						echo '<script src="http://cdn.metroui.org.ua/js/metro.min.js"></script>';
+						echo "\n";
+						break;
 
 					default:
 						return "";
@@ -74,6 +78,11 @@
 					# Connecting Material UI
 					case "mui":
 						echo '<link href="//cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css">';
+						echo "\n";
+						break;
+					# Connecting MetroUI
+					case "metroui":
+						echo '<link rel="stylesheet" href="http://cdn.metroui.org.ua/css/metro.min.css">';
 						echo "\n";
 						break;
 					default:
