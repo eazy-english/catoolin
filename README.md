@@ -1,6 +1,6 @@
 # CATOOLIN v.1.0.2 :heart_eyes_cat:  
 ## What's New???
-* Fixed bug in Connect class
+* Fixed bug in Connect class <br>
 https://github.com/eazy-english/catoolin/blob/fcda9ba880124bb417f8d038117f1ed6edad1183/lib/connect.php#L24-L28
 * Added [MetroUI](https://metroui.org.ua/)
 The MicroFramework , which had been created by catz<br>
