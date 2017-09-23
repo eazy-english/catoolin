@@ -32,28 +32,27 @@ $connect->connect("jquery");
 ```
 *But why with* `$connect` *var? Check out [index.php file](https://github.com/eazy-english/catoolin/blob/master/index.php) there is such string:*
 ```PHP
-$connect = Fabric::getClass("Connect");
+$connect = Fabric::get("Connect");
 ```
 **It means that we successfully did create Object of Connect class, and that we can work with, with** `$connect` **var**
 With *connect* method you can only connect **JS Libraries**, and with *link* you can connect **CSS Libraries**. 
 *Example*:
 ```PHP
-$connect->connect("vue-js"); # This will connect Vue JS, the JS Library
+$connect->connect("vuejs"); # This will connect Vue JS, the JS Library
 $connect->link("bootstrap"); # This will connect Bootstrap, CSS Library
 ```
 *Here are JS Libraries*:
-* `vue-js` -> Vue JS
+* `vuejs` -> Vue JS
 * `jquery` -> JQuery
-* `video-js` -> Video JS
-* `angular-js` -> Angular JS
+* `videojs` -> Video JS
 * `bootstrap` -> Bootstrap Library
 * `mui` -> Material UI
-* `less-js` -> LESS JS
+* `lessjs` -> LESS JS
 * `metroui` -> Metro UI
 
 *And here are CSS Libraries*:
 * `bootstrap` -> Bootstrap Library
-* `video-js` -> Video JS
+* `videojs` -> Video JS
 * `mui` -> Material UI
 * `metroui` -> Metro UI
 

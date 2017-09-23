@@ -4,7 +4,7 @@
 
 	# Factory creates object, Router
 
-	$router = Fabric::getClass("Router");
+	$router = Fabric::get("Router");
 
 	$router->cat();
 

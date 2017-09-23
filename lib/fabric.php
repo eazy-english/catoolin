@@ -9,7 +9,7 @@
       private $classname;
  
 	 # Here is our method
-      public static function getClass($classname) {
+      public static function get($classname) {
 		 # We reduce our $classname string to first connect object's file
           if(include(strtolower($classname) . ".php")) {
 			 # The first letter of object must be BIG

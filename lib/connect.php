@@ -17,7 +17,7 @@
 			public function connect($lib) {
 				switch ($lib) {
 					# Connectiong Vue JS
-					case "vue-js":
+					case "vuejs":
 						echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>';
 						echo "\n";
 						break;
@@ -27,14 +27,9 @@
   						echo "\n";
 						break;
 					# Connecting Video JS
-  					case "video-js":
+  					case "videojs":
   						echo '<script src="https://vjs.zencdn.net/5.19.2/video.js"></script>
   							<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>';
-  						echo "\n";
-						break;
-					# Connecting Angular JS
-  					case "angular-js":
-  						echo '<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>';
   						echo "\n";
 						break;
 					# Connecting Bootstrap plugins
@@ -48,7 +43,7 @@
   						echo "\n";
 						break;
 					# Connecting Less JS
-					case "less-js":
+					case "lessjs":
   						echo '<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>';
   						echo "\n";
 						break;
@@ -71,7 +66,7 @@
 						echo "\n";
 						break;
 					# Connecting Video JS stylesheet file
-					case "video-js":
+					case "videojs":
 						echo '<link href="https://vjs.zencdn.net/5.19.2/video-js.css" rel="stylesheet">';
 						echo "\n";
 						break;
