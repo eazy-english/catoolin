@@ -1,4 +1,4 @@
-# CATOOLIN v.1.0.2 :heart_eyes_cat:  
+# CATOOLIN v.1.0.3 :heart_eyes_cat:  
 ## What's New???
 * Fixed bug in Connect class <br>
 ```PHP
