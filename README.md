@@ -1,7 +1,13 @@
 # CATOOLIN v.1.0.2 :heart_eyes_cat:  
 ## What's New???
 * Fixed bug in Connect class <br>
-https://github.com/eazy-english/catoolin/blob/fcda9ba880124bb417f8d038117f1ed6edad1183/lib/connect.php#L24-L28
+```PHP
+# Connecting JQuery
+ case "jquery":
+	echo '<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>';
+  	echo "\n";
+	break;
+```
 * Added [MetroUI](https://metroui.org.ua/)
 The MicroFramework , which had been created by catz<br>
 This MicroFramework was actually created by **TEAM OF CATS**:
