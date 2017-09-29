@@ -1,0 +1,12 @@
+{
+    "name": "eazy-english/catoolin",
+    "description": "The Microframework CATOOLIN!",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mr CaT",
+            "email": "mrcat323@github.com"
+        }
+    ],
+    "require": {}
+}
