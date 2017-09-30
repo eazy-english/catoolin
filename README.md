@@ -60,4 +60,5 @@ $connect->link("bootstrap"); # This will connect Bootstrap, CSS Library
 **With *CATOOLIN* you can also work with such APIs as *Pinterest*, *Youtube Video Parser*, but we try to add *APIs* of another services**
 *But you without problems can use our parsers to work with **APIs**.*
 
-### EXPECT UPDATES! GOOD LUCK WITH *CATOOLIN*
+### EXPECT UPDATES! 
+### GOOD LUCK WITH *CATOOLIN*
