@@ -9,6 +9,8 @@
             "email": "mrcat323@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "stable",
+    "require": {
+    	"php": ">=5.3.0"
+    }
 }
