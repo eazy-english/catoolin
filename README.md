@@ -4,6 +4,7 @@
 * Now you can connect classes with factory `Fabric` this way
 ```PHP
 $connect = Fabric::get('Connect'); # For example we connected `Connect` class
+```
 # This MicroFramework was actually created by **TEAM OF CATS**:
 * [Mr CaT](https://github.com/mrcat323)
 * [Maxim Lutsyuk](https://github.com/Lutsyuk-M)
