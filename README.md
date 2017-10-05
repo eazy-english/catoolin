@@ -1,16 +1,8 @@
-# CATOOLIN v.1.0.3 :heart_eyes_cat:  
+# CATOOLIN v.1.0.5 ALPHA :smiley_cat: 
 ## What's New???
-* Some changes in Connect class <br>
-* Now you can connect classes with factory `Fabric` this way
-```PHP
-$connect = Fabric::get('Connect'); # For example we connected `Connect` class
-```
-# This MicroFramework was actually created by **TEAM OF CATS**:
-* [Mr CaT](https://github.com/mrcat323)
-* [Maxim Lutsyuk](https://github.com/Lutsyuk-M)
-* [Ostap Programmer](https://github.com/Ostap34JS)
-
-**Special thanks to [Andrey](https://github.com/ctl) for creating [Console Interface for CATOOLIN](https://github.com/ctl/catoo)**
+* Fixing bugs in [Router class](https://github.com/eazy-english/catoolin/blob/master/lib/router.php)
+## CLI Catoolin (Console Interface)
+[Here it is](https://github.com/eazy-english/catoo)
 ## Get started:
 `git clone https://github.com/eazy-english/catoolin`
 ## Or better install with composer

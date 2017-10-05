@@ -9,6 +9,8 @@
         }
     ],
     "require": {
-    	"php": ">=5.3.0"
+    	"php": ">=5.3.0",
+	"twbs/bootstrap": "3.3.7",
+	"fortawesome/font-awesome": "4.7.0"
     }
 }

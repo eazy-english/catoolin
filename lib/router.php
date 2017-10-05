@@ -38,11 +38,11 @@
 
 				else echo "";
 
+				$modelname = $controllername . "Model";
+
 				$controllername = $controllername . "Controller";
 				
 				# With this we'll include all model files
-
-				$modelname = $controllername . "Model";
 
 				# Our methods 'll  be 'method' and method name
 
@@ -76,7 +76,20 @@
 					include_once($controllerpath);
 
 				}
-				else return false;
+
+				# If Controller doesn't exist, we, return false, error 404
+
+				else {
+					# First require it
+
+					include_once('controller/404.php');
+
+					# And call its object
+
+					$error = new Error404();
+
+					return false;
+				}
 
 				# Call our "Controller" object
 
@@ -86,10 +99,28 @@
 
 				# Also with its method
 
-				$result = $controller->$method();
+				# If a method in our controller exists, we'll call it
 
-				if($result != null) echo "FUCK!";
+				if(method_exists($controller, $method)) {
 
-				else return false;
+					return $result = $controller->$method();
+
+				}
+
+				# Else, if a method doesn't exist, we return false, 404 Error page
+
+				else {
+					# Requiring...
+
+					include_once('controller/404.php');
+
+					# Calling the object...
+
+					$error = new Error404();
+
+					# False
+
+					return false;
+				}
 			}
 	}
