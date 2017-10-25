@@ -6,7 +6,7 @@
 ## Get started:
 `git clone https://github.com/eazy-english/catoolin`
 ## Or better install with composer
-`composer create-project eazy-english/catoolin`
+`composer create-project eazy-english/catoolin: "1.0.5-alpha"`
 ### Take a look to [database.php file](https://github.com/eazy-english/catoolin/blob/master/lib/database.php)
 ```PHP
 # Including connect to DB
