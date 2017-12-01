@@ -6,41 +6,18 @@
 // ##   ##   ##  ##     ## ##       ##     ##         ##        ######### ##   ##         ## ##       ##   ##           ######### ##         ##  
 //  ## ##    ##  ##     ## ##       ##     ##         ##        ##     ## ##    ##  ##    ## ##       ##    ##          ##     ## ##         ##  
 //   ###    #### ########  ########  #######          ##        ##     ## ##     ##  ######  ######## ##     ##         ##     ## ##        #### 
+// Created by Ostap34PHP
 class video_parser_api {
 
-    //                          _             _                                                         
-    //                         | |           | |                                                        
-    //  _   _    ___    _   _  | |_   _   _  | |__     ___     _ __     __ _   _ __   ___    ___   _ __ 
-    // | | | |  / _ \  | | | | | __| | | | | | '_ \   / _ \   | '_ \   / _` | | '__| / __|  / _ \ | '__|
-    // | |_| | | (_) | | |_| | | |_  | |_| | | |_) | |  __/   | |_) | | (_| | | |    \__ \ |  __/ | |   
-    //  \__, |  \___/   \__,_|  \__|  \__,_| |_.__/   \___|   | .__/   \__,_| |_|    |___/  \___| |_|   
-    //   __/ |                                                | |                                       
-    //  |___/                                                 |_|                                                                               
-    // Created by Ostap34PHP
-    public function get_youtube_video_id($url)
+    //youtube iframe
+    public function youtube($url, $width=560, $height=315, $fullscreen=true)
     {
-        $youtube_video_id = str_replace("https://www.youtube.com/watch?v=", "", $url);
-        return $youtube_video_id;
-    }
-
-    public function create_youtube_video_iframe($id, @$width, @$height, @$controls)
-    {
-        if(!$width){
-            $width = 560;
-        }
-        if(!$height){
-            $width = 315;
-        }
-        if(!$controls){
-            $controls = 1;
-        }else{
-            $controls = 0;
-        }
-        $video_iframe_html = "<iframe src='https://www.youtube.com/embed/$id&controls=$controls' width='$width' height='$height' frameborder='0' allowfullscreen></iframe>";
-        return $video_iframe_html;
+        parse_str( parse_url( $url, PHP_URL_QUERY ), $my_array_of_vars );
+        $youtube= '<iframe allowtransparency="true" scrolling="no" width="'.$width.'" height="'.$height.'" src="//www.youtube.com/embed/'.$my_array_of_vars['v'].'" frameborder="0"'.($fullscreen?' allowfullscreen':NULL).'></iframe>';
+        return $youtube;
     }
     
-    
+    //P.S Over time, there will be more features to work with video from various sites ^_^
 }
 
 ?>
