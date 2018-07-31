@@ -7,11 +7,11 @@
 
 	  # Var $classname, with this we can connect and create objects
       private $classname;
- 
+
 	 # Here is our method
       public static function get($classname) {
 		 # We reduce our $classname string to first connect object's file
-          if(include(strtolower($classname) . ".php")) {
+          if(include(ucfirst($classname) . ".php")) {
 			 # The first letter of object must be BIG
               $classname = ucfirst($classname);
               return new $classname;

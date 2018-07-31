@@ -1,11 +1,12 @@
 <?php
-	require_once 'lib/fabric.php';
+	require_once 'vendor/autoload.php';
 	// require_once 'lib/database.php';
 
-	use Lib\Router;
+	// use \Core\Router;
 	# Factory creates object, Router
 
-	$router = Fabric::get('Router');
+	$router = new Core\Router;
+	// $connect = new Core\Connect;
 
 	$router->cat();
 

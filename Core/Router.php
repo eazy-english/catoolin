@@ -1,5 +1,8 @@
 <?php
-namespace Lib;
+
+
+namespace Core;
+
 class Router {
 
 			# Our static method will be "cat"
@@ -65,11 +68,11 @@ class Router {
 				else {
 					# First require it
 
-					include_once('controller/404.php');
+					// include_once('controller/404.php');
 
 					# And call its object
 
-					$error = new Error404();
+					$error = new Error404;
 
 					return false;
 				}

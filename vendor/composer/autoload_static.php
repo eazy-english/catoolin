@@ -10,14 +10,15 @@ class ComposerStaticInit9d239530027614317095d9a06c6361a4
         'ComposerAutoloaderInit9d239530027614317095d9a06c6361a4' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit9d239530027614317095d9a06c6361a4' => __DIR__ . '/..' . '/composer/autoload_static.php',
-        'Database' => __DIR__ . '/../..' . '/Lib/database.php',
-        'Error404' => __DIR__ . '/../..' . '/controller/404.php',
-        'Fabric' => __DIR__ . '/../..' . '/Lib/fabric.php',
-        'Lib\\Connect' => __DIR__ . '/../..' . '/Lib/connect.php',
-        'Lib\\Router' => __DIR__ . '/../..' . '/Lib/Router.php',
-        'PinterestAPI' => __DIR__ . '/../..' . '/Lib/api/pinterest.php',
-        'mainController' => __DIR__ . '/../..' . '/controller/mainController.php',
-        'video_parser_api' => __DIR__ . '/../..' . '/Lib/api/video_parser_api.php',
+        'Core\\Checker' => __DIR__ . '/../..' . '/Core/Checker.php',
+        'Core\\Connect' => __DIR__ . '/../..' . '/Core/Connect.php',
+        'Core\\Error404' => __DIR__ . '/../..' . '/Controller/Error404.php',
+        'Core\\Router' => __DIR__ . '/../..' . '/Core/Router.php',
+        'Database' => __DIR__ . '/../..' . '/Core/database.php',
+        'Fabric' => __DIR__ . '/../..' . '/Core/fabric.php',
+        'MainController' => __DIR__ . '/../..' . '/Controller/maincontroller.php',
+        'PinterestAPI' => __DIR__ . '/../..' . '/Core/api/pinterest.php',
+        'video_parser_api' => __DIR__ . '/../..' . '/Core/api/video_parser_api.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
