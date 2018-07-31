@@ -2,6 +2,11 @@
     "name": "eazy-english/catoolin",
     "description": "The Microframework CATOOLIN!",
     "license": "MIT",
+    "autoload": {
+      "classmap": [
+        "./"
+      ]
+    },
     "authors": [
         {
             "name": "Mr CaT",

@@ -6,4 +6,15 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ComposerAutoloaderInit9d239530027614317095d9a06c6361a4' => $vendorDir . '/composer/autoload_real.php',
+    'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
+    'Composer\\Autoload\\ComposerStaticInit9d239530027614317095d9a06c6361a4' => $vendorDir . '/composer/autoload_static.php',
+    'Database' => $baseDir . '/Lib/database.php',
+    'Error404' => $baseDir . '/controller/404.php',
+    'Fabric' => $baseDir . '/Lib/fabric.php',
+    'Lib\\Connect' => $baseDir . '/Lib/connect.php',
+    'Lib\\Router' => $baseDir . '/Lib/Router.php',
+    'PinterestAPI' => $baseDir . '/Lib/api/pinterest.php',
+    'mainController' => $baseDir . '/controller/mainController.php',
+    'video_parser_api' => $baseDir . '/Lib/api/video_parser_api.php',
 );

@@ -1,23 +1,6 @@
 <?php
-
-	/*	                   __            
-	  ____ ___  __ __ / /_ ___   ____
-	 / __// _ \/ // // __// -_) / __/
-	/_/   \___/\_,_/ \__/ \__/ /_/   
-                                 
-                                 */
-
-	/* Router class by Mr CaT ) ) )
-
-	Created in easy form, for easy understanding
-
-
-
-	Routing, do it without problem! 4 Fun!
-
-	(c) Copyright by Mr C47 */
-	
-	class Router {
+namespace Lib;
+class Router {
 
 			# Our static method will be "cat"
 
@@ -29,7 +12,7 @@
 				# Explode it with slash "/"
 
 				$route = explode("/", $url);
-				
+
 				# Our controller name will depend on routes, string after the address
 
 				$controllername = "";
@@ -41,7 +24,7 @@
 				$modelname = $controllername . "Model";
 
 				$controllername = $controllername . "Controller";
-				
+
 				# With this we'll include all model files
 
 				# Our methods 'll  be 'method' and method name
